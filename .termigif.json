@@ -1,0 +1,29 @@
+{
+  "config": {
+    "username": "mk",
+    "os": "macos",
+    "theme": "dracula",
+    "colors": {
+      "bg_color": "#000000",
+      "output_color": "#fcfcfc",
+      "input_color": "#0cffc1"
+    }
+  },
+  "steps": [
+    {"type": "input", "text": "whoami"},
+    {"type": "output", "text": "Hello! My name is test2!"},
+    {"type": "pause", "delay_ms": 1000},
+
+    {"type": "input", "text": ""},
+    {"type": "output", "text": ""},
+    {"type": "pause", "delay_ms": 800},
+
+    {"type": "input", "text": "curl https://api.example.com/data", "color": "#dc322f"},
+    {"type": "output", "text": "status: success, code: 200 OK"},
+    {"type": "pause", "delay_ms": 2500},
+
+    {"type": "input", "text": "python -c 'print(2 + 2)'"},
+    {"type": "output", "text": "4"},
+    {"type": "pause", "delay_ms": 1000}
+  ]
+}
